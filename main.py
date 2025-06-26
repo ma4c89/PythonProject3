@@ -1,10 +1,8 @@
 import os
 import time
 
-# Entrada da senha
 senha_real = input("Digite a senha: ")
 
-# Lista de caracteres possíveis
 caracteres = [
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
     "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -30,8 +28,8 @@ for i in range(len(senha_real)):
             senha_descoberta += c
             print(f"Caractere encontrado: '{c}'")
             print(f"Senha descoberta até agora: {senha_descoberta}\n")
-            time.sleep(0.3)  # delay para visualizar melhor
-            # Limpar tela para próxima rodada
+            time.sleep(0.3)  
+            
             os.system("cls" if os.name == "nt" else "clear")
             break
 
